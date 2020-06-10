@@ -1,0 +1,133 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+.grid{
+
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+	overflow: hidden;
+	max-width: 1000px;
+	width: 96%;
+	height: 100%
+	margin: 20px auto;
+	padding: 20px;
+}
+
+
+.header{
+	height: 500px;
+}
+
+
+
+
+.text{
+	grid-column: 3/7;
+	font-family: 'Raleway', sans-serif;
+}
+
+.text-img{
+	grid-column: 8/11;
+	width: 100%;
+	height: auto;
+}
+
+.service{
+  grid-column: 4/8;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 80px;
+}
+
+
+
+.flex{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+
+.img{
+	width: 300px;
+	height: 300px;
+}
+
+
+.title{
+
+	grid-column: 3/6;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 160px;
+
+}
+
+.title-img{
+	grid-column: 7/11;
+	margin-top: 160px;
+}
+
+
+.footer{
+
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 60px;
+	width: 100%;
+
+}
+
+.title-redes{
+	grid-column: 1/-1;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 40px;
+}
+
+
+
+.redes{
+	
+	font-size: 40px;
+	grid-column: span 3;
+}
+
+
+/**Mobil**/
+
+@media screen and (max-width: 768px){
+
+        .flex{
+           
+           flex-direction: column;
+           flex-wrap: wrap;
+           align-content: center;
+
+        }
+
+      .redes{
+      	   grid-column: 1/-1;
+      }
+
+}
